@@ -1,0 +1,61 @@
+
+1.
+	YOUTUBE Video hosting
+
+	- User registration; *
+	- User authorization; **
+	- Adding of video recording; *
+	- Remove video recording from playlist; ****
+	- Searching of video recording; **
+	- Create a channel; *
+	- Video preview; **
+	- Create a playlist; *
+	- Adding reaction and feedback (likes, dislikes, comments); ***
+	- Censor control; **
+	- User blocking; ***
+
+	* Create
+	** Read
+	*** Update
+	**** Delete
+
+2.
+	SELECT 
+	    ProductName, 
+    	    Price
+	FROM [Products]
+	
+	WHERE Price >= 20
+	
+3.
+	SELECT DISTINCT 
+	    Country
+	FROM [Customers]
+	
+4.
+	SELECT 
+	    ProductName, Price
+	FROM [Products]
+	
+	WHERE 
+	    NOT SupplierID = 1
+	    
+	ORDER BY Price ASC
+
+5.
+	SELECT 
+	    ContactName
+	FROM [Customers]
+
+	WHERE
+	    NOT Country IN ('France', 'USA')
+	    
+6.
+	SELECT ProductName
+	FROM [Products]
+
+	WHERE
+	    CategoryID = 4
+    
+	ORDER BY Price DESC
+	LIMIT 2

@@ -25,7 +25,8 @@
     	    Price
 	FROM [Products]
 	
-	WHERE Price >= 20
+	WHERE 
+	    Price >= 20
 	
 3.
 	SELECT DISTINCT 

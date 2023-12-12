@@ -27,13 +27,16 @@
 	    Categories.CategoryID = 1 AND Country = "Brazil"
 
 -- 3. Расчитать З/П сотрудника с фамилией Davolio (проекция: зп, фамилиясотрудника): 
+		
 	SELECT
     	    SUM(Products.Price * OrderDetails.Quantity) * .05 AS Salary,
 	    Employees.LastName
 	FROM Orders
+		
         JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
         JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
         JOIN Products ON OrderDetails.ProductID = Products.ProductID
+		
 	WHERE
             Employees.LastName = 'Davolio';
 
